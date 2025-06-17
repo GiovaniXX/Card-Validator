@@ -1,28 +1,21 @@
-# **Card Validator**
-
-## **💳 Sobre o Projeto**
-
-O **Card Validator** é uma implementação em JavaScript para identificar a bandeira de cartões de crédito e débito a partir do número informado. O sistema reconhece as principais bandeiras do mercado, incluindo Visa, MasterCard, Elo, American Express, Discover, Hipercard, Diners Club, EnRoute, JCB, Voyager e Aura.
+# 💳 Card Validator
 
 ---
 
-## **🚀 Como Funciona**
+## 🚀 Como Funciona
 
-O projeto utiliza expressões regulares para identificar o padrão de cada bandeira. Ao informar o número do cartão, o sistema remove caracteres não numéricos e compara o início do número com os padrões conhecidos de cada bandeira.
-
----
-
-## **📂 Estrutura dos Arquivos**
-
-- **cardFlag.js**  
-  Contém a lógica de identificação das bandeiras e a função para exibir mensagens personalizadas.
-
-- **src/index.js**  
-  Arquivo principal de execução, onde você pode testar a identificação de diferentes cartões.
+O **Card Validator** é uma implementação em JavaScript para identificar a bandeira de cartões de crédito e débito a partir do número informado. O sistema reconhece as principais bandeiras do mercado, incluindo **Visa**, **MasterCard**, **Elo**, **American Express**, **Discover**, **Hipercard**, **Diners Club**, **EnRoute**, **JCB**, **Voyager** e **Aura**.
 
 ---
 
-## **🛠️ Como Usar**
+## 📂 Estrutura dos Arquivos
+
+- `cardFlag.js`: Contém a lógica de identificação das bandeiras e a função para exibir mensagens personalizadas.
+- `src/index.js`: Arquivo principal de execução, onde você pode testar a identificação de diferentes cartões.
+
+---
+
+## 🛠️ Como Usar
 
 1. **Clone o repositório:**
    ```bash
@@ -39,7 +32,7 @@ O projeto utiliza expressões regulares para identificar o padrão de cada bande
 
 ---
 
-## **🧩 Exemplo de Uso**
+## 🧩 Exemplo de Uso
 
 No arquivo `src/index.js`:
 
@@ -69,7 +62,7 @@ A saída será uma mensagem personalizada para cada cartão, por exemplo:
 
 ---
 
-## **📝 Como Funciona a Identificação**
+## 📝 Como Funciona a Identificação
 
 - O número do cartão é limpo para conter apenas dígitos.
 - O sistema percorre uma lista de bandeiras, cada uma com seu padrão (regex).
@@ -78,9 +71,15 @@ A saída será uma mensagem personalizada para cada cartão, por exemplo:
 
 ---
 
-## **✨ Personalização**
+## ✨ Personalização
 
 Para adicionar novas bandeiras, basta incluir um novo objeto na lista `cardFlags` em `cardFlag.js` com o nome e o padrão desejado.
+
+---
+
+## 📢 Contribuição
+
+Sinta-se à vontade para abrir issues ou pull requests para melhorias, correções ou inclusão de novas bandeiras!
 
 ---
 
